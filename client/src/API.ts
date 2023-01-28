@@ -1,6 +1,7 @@
 import axios, { AxiosResponse } from "axios";
 
-const baseUrl: string = "http://localhost:3001/api";
+const baseUrl: string = "/api"; //for deployment purposes
+// const baseUrl: string = "http://localhost:3001/api"; for production and use in the locahost
 
 export const getNotes = async (): Promise<AxiosResponse<ApiDataType>> => {
   try {
